@@ -5,60 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .wrapper {
-      margin-bottom: 10px;
-    }
-
-    .error {
-      color: red;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-  <!-- HTML форма для ввода данных -->
+  <!-- data input form -->
   <form>
-
     <div class="wrapper">
-      <label for="personName">Имя:</label>
+      <label for="personName">Name:</label>
       <input type="text" id="personName" required>
       <span id="personNameError" class="error"></span>
     </div>
 
     <div class="wrapper">
-      <label for="personAge">Возраст:</label>
+      <label for="personAge">Age:</label>
       <input type="number" id="personAge" required>
       <span id="personAgeError" class="error"></span>
     </div>
 
     <div class="wrapper">
-      <label for="carMake">Марка автомобиля:</label>
+      <label for="carMake">Made:</label>
       <input type="text" id="carMake" required>
       <span id="carMakeError" class="error"></span>
     </div>
 
     <div class="wrapper">
-      <label for="carModel">Модель автомобиля:</label>
+      <label for="carModel">Model:</label>
       <input type="text" id="carModel" required>
       <span id="carModelError" class="error"></span>
     </div>
 
     <div class="wrapper">
-      <label for="carYear">Год выпуска автомобиля:</label>
+      <label for="carYear">Year:</label>
       <input type="number" id="carYear" required>
       <span id="carYearError" class="error"></span>
     </div>
 
-    <button type="button" onclick="submitForm()">Отправить</button>
+    <button type="button" onclick="submitForm()">Send</button>
   </form>
 
-  <!-- Вывод данных на страницу -->
-  <div id="personData"></div>
-  <div id="carData"></div>
+  <!-- Displaying data on a page -->
+  <div class="result">
+    <ul id="personData"></ul>
+    <ul id="carData"></ul>
+  </div>
 
-
-  <script src="app.js"></script>
+  <script src="./scripts/app.js"></script>
 </body>
 
 </html>

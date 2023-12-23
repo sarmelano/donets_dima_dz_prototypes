@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wrapper label {
+  width: 3%;
+  min-width: 50px;
+  margin-right: 10px;
+}
+
+.wrapper input {
+  width: 10%;
+  min-width: 75px;
+}
+
+.error {
+  color: red;
+  margin-left: 10px;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
